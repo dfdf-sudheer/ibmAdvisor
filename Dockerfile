@@ -25,7 +25,7 @@ RUN mkdir -p /config/apps && \
 
 FROM ibmcom/websphere-liberty:kernel-java8-ibmjava-ubi
 
-ARG SSL=true
+ARG SSL=false
 #Monitoring is disabled because it is not compatible with the servlet version the application is using.
 #To enable monitoring, you must be using servlet-3.1 and set the monitoring value to true in this file, and also in the values.yaml for the chart.
 ARG MP_MONITORING=false
